@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="300dp"
+        android:background="@drawable/bm_button"
+        android:padding="3dp"
+        android:text="Hазад"
+        android:textAllCaps="false"
+        android:textSize="10pt"
+        android:textColor="@color/white"
+        />
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        />
+    <EditText
+        android:id="@+id/login_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applogo"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:hint="Логин"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/login_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_input"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:id="@+id/linear_check"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_password_input">
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_check"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bm_button"
+
+        android:padding="3dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="15pt"
+        android:textColor="@color/white"
+        />
+
+
+
+</RelativeLayout>
